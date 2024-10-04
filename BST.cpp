@@ -2,6 +2,19 @@
 #include <iomanip>
 using namespace std;
 
+class node{
+    public:
+    node* right;
+    node* left;
+    int data;
+
+    node(int data){
+        this->data=data;
+        this->left=NULL;
+        this->right=NULL;
+    }
+};
+
 class BinarySearchTree {
 private:
     struct tree_node {
